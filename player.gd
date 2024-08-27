@@ -5,11 +5,11 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 
-var gravity = 1240
+var gravity = 1000
 var is_jumping = false 
 
-signal morreu
-signal pegouitem
+#signal morreu
+#signal pegouitem
 
 
 
@@ -71,8 +71,8 @@ func _physics_process(delta):
 	
 
 	
-func _levouDano():
-	print("Sim, levou dano")
-	emit_signal("morreu")
+#func _levouDano():
+	#print("Sim, levou dano")
+	#emit_signal("morreu")
 
 	
